@@ -16,23 +16,6 @@ public void setMyWordArray(String input) {
     words = input.split(" ");
 }
 
-/*
-public void setTheArrayOfWordsWithExit(String input) {
-        for (int j = 0; j < words.length; j++) {
-            while (true) {
-                if (!words[j].equals("stop")) {
-                    words = input.split(" ");
-                } else {
-                    break;
-                }
-            }
-        }
-}
-public boolean getTheExit() {
-    return exit;
-}
- */
-
 //Skriver ut alla ord som user skrivit om man vill se.
 public void printMyArrayWords() {
     for (String word : words) {
@@ -91,3 +74,24 @@ public String getTheLongestWord() {
     return longestWord;
     }
 }
+
+
+
+
+
+/* IGNORE, BAD TRY
+public void setTheArrayOfWordsWithExit(String input) {
+        for (int j = 0; j < words.length; j++) {
+            while (true) {
+                if (!words[j].equals("stop")) {
+                    words = input.split(" ");
+                } else {
+                    break;
+                }
+            }
+        }
+}
+public boolean getTheExit() {
+    return exit;
+}
+ */
