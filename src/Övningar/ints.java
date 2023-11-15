@@ -58,6 +58,9 @@ if (nummer1 % nummer2 == 0) {
 }
 
 
+//Exempel på att skippa if/else när vi bara har två olika alternativ att välja på!
+        int num = 255;
+        System.out.println(num < 200 ? "Smaller!" : "Bigger!");
 
 
 

@@ -1,5 +1,6 @@
 package Övningar;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class arrays {
@@ -31,6 +32,8 @@ for(int i=0; i<StringArray.length; i++) {
 
 System.out.println();
 
+/*
+
 //Skapa ett program som tar in 5 namn och lägger dem i en array för att sedan skriva ut första & sista namnet.
 Scanner scan = new Scanner(System.in);
 System.out.print("Vänligen skriv in 5 namn: ");
@@ -41,8 +44,29 @@ String [] stringArray = inputFiveNames.split(" ");
         System.out.println(stringArray.length); //skriver ut att det är 5 namn.
 
 
+ */
+//Här tar vi in input från user och sen räknar antal ord och antal tecken!
+        System.out.println("Skriv in några ord tack: ");
+        Scanner scan = new Scanner(System.in);
+        String userWords = scan.nextLine();
+
+//Längden på antal ord i TheSplitArray kommer vi får ut.
+        String [] theSplitArray = userWords.split(" ");
+        System.out.println(theSplitArray.length);
+
+//Här kommer vi få ut antal tecken på våra ord utan mellanslag!!!
+        int count = 0;
+        for(int i = 0; i < userWords.length(); i++) {
+            if(userWords.charAt(i) != ' ')
+                count++;
+        }
+        System.out.println(count);
 
 
+        /* För att skriva ut en char istället för dennes siffra.
+        char bLetter = 'b';
+        System.out.println(String.valueOf(bLetter));
+        */
 
 
 

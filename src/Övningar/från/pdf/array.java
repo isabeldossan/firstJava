@@ -80,7 +80,7 @@ public class array {
 */
 
 //69. En array med 50 inlästa tal finns. Addera talet 2 till talen på indexplats 0, 2, 4,… i arrayn.
-
+/*
   int[] myLongArray = new int[50];
         for (int i = 0; i < myLongArray.length;i+=2){ //<-- Vi ökar i med 2 varje gång. Vilket gör att vi kan öka varannan position.
             myLongArray[i] += 2;
@@ -117,7 +117,21 @@ System.out.println(Arrays.toString(myLongArray));
 */
 
 
+//75.En array med 50 inlästa tal finns. Beräkna och skriv ut summan av alla positiva tal och summan av alla negativa tal i arrayn.
 
+int[] myBigArray = new int[] {4,7,23,6,12,43,89,65,5,9,7,5,3,76,-5,-8,-2,-12,-13,-2};
+
+int counterPositives = 0;
+int counterNegatives = 0;
+
+for (int i = 0; i<myBigArray.length; i++) {
+    if (myBigArray[i] >0) {
+        counterPositives += myBigArray[i];
+    } else if (myBigArray[i] <0) {
+        counterNegatives += myBigArray[i];
+    }
+}
+        System.out.println(counterPositives + " and " + counterNegatives);
 
 
 
