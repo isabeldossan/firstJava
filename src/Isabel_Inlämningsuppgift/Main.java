@@ -30,7 +30,5 @@ public class Main {
         System.out.println("___________ Wow a bit extra maybe? Here it comes:___________");
         System.out.println("Your longest word is: " + myLogicProgramme.getTheLongestWord());
         System.out.println("And the amount of words you have written is: " + myLogicProgramme.getTotalAmountOfWords());
-
-        System.out.println("hejehjeeh");
     }
 }
