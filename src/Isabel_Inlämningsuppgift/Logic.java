@@ -79,6 +79,9 @@ public String getTheLongestWord() {
 
 
 
+
+
+
 /* IGNORE, BAD TRY
 public void setTheArrayOfWordsWithExit(String input) {
         for (int j = 0; j < words.length; j++) {
